@@ -1,1 +1,54 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Enter password</title><style>body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: linear-gradient(to bottom right, #f0f0f0, #e0e0e0); } .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; } .button { background-color: #0078d4; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; } .button:hover { background-color: #005a9e; }</style></head><body><main><section class="container"><header><img src="logo.png" alt="Company Logo" /></header><h1>Enter password</h1><form method="post" action="#"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Enter your password" required /><button type="submit" class="button">Sign in</button></form><a href="#">Forgot my password?</a></section></main><footer></footer></body></html>
+<!doctype html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <title>Enter password - Microsoft</title>
+  <style>
+    :root { --bg1: #f2e2df; --bg2: #e3eaf8; --card: #fff; --text: #111; --link: #1a4ed8; --shadow: rgba(0,0,0,.15); }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: #1b1b1b;
+      background: linear-gradient(135deg, #f7e5de 0%, #f4f4f7 20%, #dde7fb 100%);
+      height: 100%;
+    }
+    .page { min-height: 100%; display: flex; align-items: center; justify-content: center; padding: 2rem; }
+    .card { width: 420px; max-width: 90vw; background: #fff; border-radius: 6px; box-shadow: 0 6px 16px rgba(0,0,0,.15); padding: 28px; }
+    .card__header { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+    .logo { width: 20px; height: 20px; display: inline-block; }
+    h1 { font-size: 28px; margin: 0 0 12px; font-weight: 700; color: #111; }
+    label[for=\"password\"] { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .field { width: 100%; padding: 0; border: 0; border-bottom: 2px solid #555; outline: none; font-size: 16px; padding-bottom: 6px; background: transparent; }
+    .forgot { display: block; margin: 10px 0 8px; color: #1a4ed8; text-decoration: none; font-size: 14px; }
+    .actions { display: flex; justify-content: flex-end; }
+    .btn { background: #1a4ed8; color: white; border: 0; padding: 8px 14px; border-radius: 3px; font-weight: 600; cursor: pointer; }
+    .footer { margin-top: 12px; font-size: 12px; color: #777; text-align: center; padding-top: 8px; border-top: 1px solid #eee; }
+    @media (max-width: 480px) { .card { padding: 24px; } h1 { font-size: 26px; } }
+  </style>
+</head>
+<body>
+  <main class=\"page\" aria-label=\"Sign-in page\">
+    <section class=\"card\" aria-label=\"Sign in panel\">
+      <header class=\"card__header\">
+        <img class=\"logo\" src=\"logo.png\" alt=\"Microsoft logo\" width=\"20\" height=\"20\" />
+        <span style=\"font-weight:500; color:#555;\">Microsoft</span>
+      </header>
+      <h1>Enter password</h1>
+      <form method=\"post\" action=\"#\">
+        <label for=\"password\">Password</label>
+        <input class=\"field\" type=\"password\" id=\"password\" name=\"password\" placeholder=\"Password\" autocomplete=\"current-password\" required />
+        <a href=\"#\" class=\"forgot\">Forgot my password</a>
+        <div class=\"actions\">
+          <button class=\"btn\" type=\"submit\">Sign in</button>
+        </div>
+      </form>
+      <footer class=\"footer\" aria-label=\"Footer\">
+        Microsoft account
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
